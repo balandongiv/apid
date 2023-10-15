@@ -1,5 +1,32 @@
 
-List of customer needs for a thermostat. 
+# Prompt 1
+
+
+Please classify the following user needs into common categories based on their shared characteristics. For each of the output, provide a clear categorization and number each need for easy reference. Make each of the needs unique. The expected output format is as follows:
+Category 1: Category Name
+1.	The original statement of the user need.
+The pre-identified category are as follow:
+The thermostat is easy to install.
+The thermostat lasts a long time.
+The thermostat is easy to use.
+The thermostat controls are precise.
+The thermostat is smart.
+The thermostat is personal.
+The thermostat is a good investment.
+The thermostat is reliable.
+
+The user needs are as follows:
+
+
+# Prompt 2
+Please classify the following user needs into common categories based on their shared characteristics. For each of the output, provide a clear categorization and number each need for easy reference. Make each of the needs unique. The expected output format is as follows:
+Category 1: Category Name
+
+
+The user needs are as follows:
+
+
+# List of customer needs for a thermostat. 
 
 | Customer Need Statement                                                                    |
 |--------------------------------------------------------------------------------------------|
@@ -42,6 +69,7 @@ List of customer needs for a thermostat.
 | - The thermostat's controls accommodate users with limited dexterity.                      |
 | - The thermostat accommodates different conventions for temperature scales.                |
 | - The thermostat accommodates different preferences for representing time and date.        |
+
 
 Extracted from Exhibit 5-8, page 85, chapter Identifying Customer Needs.6th edidtion. Product Design and development
 Karl T. Ulrich, Steven D. Eppinger, McGraw-Hill, 2016.
