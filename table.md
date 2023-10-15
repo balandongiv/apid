@@ -1,5 +1,3 @@
-dfs
-# Te
 
 List of customer needs for a thermostat. 
 
