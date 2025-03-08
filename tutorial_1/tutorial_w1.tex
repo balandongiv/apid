@@ -1,0 +1,99 @@
+% \documentclass{article}
+\documentclass[a4paper,12pt]{report} % A4 size with 12pt font
+\usepackage{multirow}
+\usepackage{graphicx}  % Required for rotating text
+\usepackage{array}     % Allows custom column formatting
+\usepackage{amssymb}   % Provides the checkmark symbol
+\usepackage{booktabs}
+\usepackage{rotating} % Package to rotate the table
+\usepackage{booktabs}
+\usepackage{lscape} % Package for landscape orientation
+\usepackage{pdflscape} % Ensures correct PDF output
+\begin{document}
+
+% \include{tutorial/my_table}
+\include{tutorial/rotate_table}
+% \begin{table}[h]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|c|}
+%         \hline
+%         \multirow{2}{*}{Needs} & 
+%         \rotatebox{90}{\parbox{2cm}{Units}} & 
+%         \rotatebox{90}{\parbox{2cm}{cm}} & 
+%         \rotatebox{90}{\parbox{2cm}{kg}} & 
+%         \rotatebox{90}{\parbox{2cm}{Liters}} \\ 
+%         \cline{2-5}
+%         & \rotatebox{90}{\parbox{2cm}{Metric}} & 
+%           \rotatebox{90}{\parbox{2cm}{Planting Depth}} & 
+%           \rotatebox{90}{\parbox{2cm}{Weight}} & 
+%           \rotatebox{90}{\parbox{2cm}{Watering Volume}} \\ 
+%         \hline
+%         Example 1 & $\checkmark$ &  & $\checkmark$ &  \\ 
+%         Example 2 &  & $\checkmark$ &  &  \\ 
+%         Example 3 &  & $\checkmark$ &  & $\checkmark$ \\ 
+%         Example 4 & $\checkmark$ &  &  & $\checkmark$ \\ 
+%         Example 5 & $\checkmark$ & $\checkmark$ &  &  \\ 
+%         Example 6 &  &  & $\checkmark$ & $\checkmark$ \\ 
+%         Example 7 & $\checkmark$ &  & $\checkmark$ &  \\ 
+%         Example 8 &  & $\checkmark$ &  &  \\ 
+%         Example 9 &  &  & $\checkmark$ & $\checkmark$ \\ 
+%         Example 10 & $\checkmark$ &  &  & $\checkmark$ \\ 
+%         \hline
+%     \end{tabular}
+%     \caption{The Needs-metric matrix with check marks}
+%     \label{tab:example_extended}
+% \end{table}
+
+
+
+
+% \begin{sidewaystable} % Rotated table
+%     \centering
+%     \caption{Competitive benchmark metric.}
+%     \small % Reduce font size to fit
+%     \renewcommand{\arraystretch}{1.2} % Increase row height for better readability
+%     \setlength{\tabcolsep}{5pt} % Adjust column spacing
+
+%     \begin{tabular}{c c l c c p{2cm} p{2cm} p{2cm} p{2cm} p{2cm}}
+%         \toprule
+%         \multicolumn{3}{c}{} & \multicolumn{2}{c}{} & \multicolumn{5}{c}{\textbf{Competitor}} \\
+%         \cmidrule(lr){6-10}
+%         \textbf{No} & \textbf{Need Nos} & \textbf{Metric} & \textbf{Importance} & \textbf{Units} & \textbf{Nvidia} & \textbf{Microsoft} & \textbf{Google} & \textbf{UMS} & \textbf{Techno} \\
+%         & & & (1 Low – 5 High) & & & & & & \\
+%         \midrule
+%         1  & 1, 5, 9  & Minimum planting depth & 5 & cm  & 2.0 & 1.5 & 2.0 & 3.0 & 2.0 \\
+%         2  & 1, 5, 9  & Maximum planting depth & 5 & cm  & 5.0 & 6.0 & 6.0 & 5.5 & 7.0 \\
+%         3  & 10       & Grip length            & 3 & cm  & 15  & 18  & 20  & 17  & 19  \\
+%         4  & 10, 14   & Total Mass             & 4 & kg  & 2.5 & 3.0 & 3.5 & 2.8 & 4.0 \\
+%         5  & 6, 18    & Seed storage volume    & 4 & cm\textsuperscript{3} & 650 & 700 & 750 & 700 & 900 \\
+%         \bottomrule
+%     \end{tabular}
+% \end{sidewaystable}
+
+
+
+
+% \begin{table}[h]
+%     \centering
+%     \caption{Competitive benchmark metric.}
+%     \small % Reduce font size to fit
+%     \renewcommand{\arraystretch}{1.2} % Increase row height for better readability
+%     \setlength{\tabcolsep}{5pt} % Adjust column spacing
+
+%     \begin{tabular}{c c l c c p{2cm} p{2cm} p{2cm} p{2cm} p{2cm}}
+%         \toprule
+%         \multicolumn{3}{c}{} & \multicolumn{2}{c}{} & \multicolumn{5}{c}{\textbf{Competitor}} \\
+%         \cmidrule(lr){6-10}
+%         \textbf{No} & \textbf{Need Nos} & \textbf{Metric} & \textbf{Importance} & \textbf{Units} & \textbf{Nvidia} & \textbf{Microsoft} & \textbf{Google} & \textbf{UMS} & \textbf{Techno} \\
+%         & & & (1 Low – 5 High) & & & & & & \\
+%         \midrule
+%         1  & 1, 5, 9  & Minimum planting depth & 5 & cm  & 2.0 & 1.5 & 2.0 & 3.0 & 2.0 \\
+%         2  & 1, 5, 9  & Maximum planting depth & 5 & cm  & 5.0 & 6.0 & 6.0 & 5.5 & 7.0 \\
+%         3  & 10       & Grip length            & 3 & cm  & 15  & 18  & 20  & 17  & 19  \\
+%         4  & 10, 14   & Total Mass             & 4 & kg  & 2.5 & 3.0 & 3.5 & 2.8 & 4.0 \\
+%         5  & 6, 18    & Seed storage volume    & 4 & cm\textsuperscript{3} & 650 & 700 & 750 & 700 & 900 \\
+%         \bottomrule
+%     \end{tabular}
+% \end{table}
+
+\end{document}
