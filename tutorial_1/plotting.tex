@@ -1,0 +1,29 @@
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            boxplot/draw direction=y,
+            width=12cm, height=8cm,
+            ymajorgrids=true,
+            title={Randomly Generated Box Plot},
+            xlabel={Category},
+            ylabel={Values},
+            xtick={1,2,3},
+            xticklabels={A, B, C}
+        ]
+            % Generate three random box plots
+            \foreach \i in {1,2,3} {
+                \addplot+[
+                    boxplot prepared={
+                        median=5+\i*0.5, % Adjusted median
+                        upper quartile=6+\i*0.4,
+                        lower quartile=4+\i*0.3,
+                        upper whisker=7+\i*0.5,
+                        lower whisker=3+\i*0.2
+                    }
+                ] coordinates {};
+            }
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Box plot with randomly generated values}
+\end{figure}

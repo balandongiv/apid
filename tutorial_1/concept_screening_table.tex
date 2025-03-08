@@ -1,0 +1,34 @@
+\begin{landscape} % Start landscape page
+    \begin{table}[h]
+        \centering
+        \caption{Concept-screening matrix table.}
+        \renewcommand{\arraystretch}{1.2} % Adjust row height for better spacing
+        \setlength{\tabcolsep}{6pt} % Adjust column spacing
+
+        % Define equal width columns for better alignment
+        \newcolumntype{C}{>{\centering\arraybackslash}p{3cm}} 
+
+        \begin{tabular}{l C C C C C}
+            \toprule
+            \textbf{CRITERIA} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ 
+            & & & & & (Reference) \\ 
+            \midrule
+            Ease of handling & 0 & 0 & 0 & 0 & 1 \\
+            Efficient seed dispensing & 1 & 1 & 1 & 0 & 0 \\
+            Ease of control & 1 & 0 & 0 & 0 & 1 \\
+            Ease of manufacture & 0 & 1 & 1 & 0 & 0 \\
+            Portability & 0 & 0 & 0 & 0 & 0 \\
+            Longevity & 0 & 1 & 1 & 0 & -1 \\
+            \midrule
+            Sum +’s & 2 & 3 & 3 & 2 & 2 \\
+            Sum 0’s & 4 & 3 & 3 & 3 & 3 \\
+            Sum -’s & 0 & 0 & 0 & 1 & 1 \\
+            \midrule
+            Net score & 2 & 3 & 3 & 1 & 1 \\
+            Rank & 2 & 1 & 1 & 4 & 3 \\
+            Continue? & Combine & Combine & Yes & No & No \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{landscape} % End landscape page
+gsgsg
